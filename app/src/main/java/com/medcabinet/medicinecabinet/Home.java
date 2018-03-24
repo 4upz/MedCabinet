@@ -34,17 +34,11 @@ public class Home extends AppCompatActivity {
 
         //DatabaseReference myRef = database.getReference("helloworld");
         DatabaseReference myRef = database.getReference("/gus");
-
         Task<Void> task = myRef.setValue("i am awesome");
-        task.addOnCompleteListener(this, new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                Log.d(TAG, "task complete");
-            }
-        });
+        task = myRef.setValue("another entry");
         Log.d(TAG, "trying to save data:" + myRef + " task" + task);
         setContentView(R.layout.home);
-        
+
 
         Button button = findViewById(R.id.button4);
         button.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +47,16 @@ public class Home extends AppCompatActivity {
                 goToMain2Activity();
             }
         });
+
+        Button button5 = findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToUsedMedicine();
+            }
+        });
+
+
 // ...
 
 // Choose authentication providers
@@ -78,8 +82,12 @@ public class Home extends AppCompatActivity {
 
                 // Successfully signed in
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                Log.d(TAG, "Yay, we got a user " + user);
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("/"+user.getDisplayName());
+                //Task<Void> task = myRef.setValue(user.getEmail());
 
+                Log.d(TAG, "Yay, we got a user " + user);
+//                Log.d(TAG, "Display Name:  " + user.getDisplayName());
 
                 // ...
             } else {
@@ -94,5 +102,9 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void goToUsedMedicine() {
+        Intent intent = new Intent(this, medicine_used.class);
+        startActivity(intent);
+    }
 
 }
