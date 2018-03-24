@@ -21,7 +21,11 @@
             android:name=".newmedicine"
             android:label="@string/title_activity_main3"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".medicine_used"></activity>
+        <activity android:name=".medicine_used" />
+        <activity
+            android:name=".MedCabinetActivity"
+            android:label="@string/title_activity_med_cabinet"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
