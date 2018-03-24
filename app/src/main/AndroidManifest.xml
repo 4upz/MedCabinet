@@ -16,12 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
+        <activity android:name=".reorder" />
         <activity
-            android:name=".Main3Activity"
+            android:name=".newmedicine"
             android:label="@string/title_activity_main3"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Main4Activity"></activity>
+        <activity android:name=".medicine_used"></activity>
     </application>
 
 </manifest>

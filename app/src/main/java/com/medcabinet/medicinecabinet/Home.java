@@ -23,7 +23,7 @@ public class Home extends AppCompatActivity {
     }
 
     private void goToMain2Activity(){
-        Intent intent = new Intent(this, Main3Activity.class);
+        Intent intent = new Intent(this, newmedicine.class);
         startActivity(intent);
     }
 
