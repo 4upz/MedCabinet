@@ -128,17 +128,17 @@
 
         android:gravity="center">
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:minWidth="180dp"
-            android:onClick="goToMain3Activity"
-            android:text="Go to MyMedCabinet"
-            android:textColor="@color/colorPrimaryDark" />
+        <!--<Button-->
+            <!--android:id="@+id/button6"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:minWidth="180dp"-->
+            <!--android:onClick="goToMain3Activity"-->
+            <!--android:text="Go to MyMedCabinet"-->
+            <!--android:textColor="@color/colorPrimaryDark" />-->
     </LinearLayout>
 
 
