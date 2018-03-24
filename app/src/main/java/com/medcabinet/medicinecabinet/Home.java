@@ -32,6 +32,14 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        Button button5 = findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToUsedMedicine();
+            }
+        });
+
 // ...
 
 // Choose authentication providers
@@ -58,7 +66,7 @@ public class Home extends AppCompatActivity {
                 // Successfully signed in
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 Log.d(TAG, "Yay, we got a user " + user);
-
+//                Log.d(TAG, "Display Name:  " + user.getDisplayName());
 
                 // ...
             } else {
@@ -73,5 +81,9 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void goToUsedMedicine() {
+        Intent intent = new Intent(this, medicine_used.class);
+        startActivity(intent);
+    }
 
 }
