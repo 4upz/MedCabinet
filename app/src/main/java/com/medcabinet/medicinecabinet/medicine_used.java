@@ -13,6 +13,8 @@ public class medicine_used extends AppCompatActivity {
         setContentView(R.layout.medicine_used);
     }
 
+    
+
     public void goToMain3Activity(View view){
         Intent intent = new Intent(this, newmedicine.class);
         startActivity(intent);
