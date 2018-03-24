@@ -18,6 +18,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.gson.Gson;
 
 import org.w3c.dom.Comment;
 
@@ -51,7 +52,7 @@ public class medicine_used extends ListActivity  {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference medsList = database.getReference("/"+user.getUid() +"/meds");
-        ArrayList<String> result = new ArrayList<>();
+        final ArrayList<String> result = new ArrayList<>();
 
         ChildEventListener childEventListener = new ChildEventListener() {
             @Override
@@ -60,7 +61,12 @@ public class medicine_used extends ListActivity  {
 
                 // A new comment has been added, add it to the displayed list
                 String medJson = dataSnapshot.getValue(String.class);
-                Log.d(TAG,"Got: "+ medJson);
+                Gson gson = new Gson();
+                Medicine medicine = gson.fromJson(medJson, Medicine.class);
+                String medUIText = medicine.getUIText();
+                result.add(medUIText);
+                Log.d(TAG,"Got Meds: "+ medicine.toJson());
+                getListView().invalidateViews();
                 // ...
             }
 

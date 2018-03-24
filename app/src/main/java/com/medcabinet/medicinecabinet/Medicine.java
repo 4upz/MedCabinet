@@ -40,4 +40,8 @@ public class Medicine {
         Log.d(TAG, "Saved to Firebase the data: "+ jsonData);
         //Task<Void> task = myRef.setValue(user.getEmail());
     }
+
+    public String getUIText() {
+        return String.format("Name: %s Dosage: %s Frequency: %s", medName, dosage, frequency);
+    }
 }
