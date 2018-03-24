@@ -56,6 +56,14 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        Button button6 = findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToReorder();
+            }
+        });
+
 
 // ...
 
@@ -70,7 +78,10 @@ public class Home extends AppCompatActivity {
                         .setAvailableProviders(providers)
                         .build(),
                 RC_SIGN_IN);
+
+
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -106,5 +117,11 @@ public class Home extends AppCompatActivity {
         Intent intent = new Intent(this, medicine_used.class);
         startActivity(intent);
     }
+
+    private void goToReorder() {
+        Intent intent = new Intent(this, reorder.class);
+        startActivity(intent);
+    }
+
 
 }

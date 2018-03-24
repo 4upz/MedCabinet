@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/welcome"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="19dp"
         android:layout_weight="1"
         android:background="@color/colorPrimary"
         android:minWidth="180dp"
@@ -49,12 +49,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button4"
-        android:layout_alignTop="@+id/button4"
-        android:layout_marginTop="62dp"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="11dp"
         android:layout_weight="1"
         android:background="@color/colorPrimary"
         android:minWidth="180dp"
         android:text="View Medication"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:minWidth="180dp"
+        android:text="Reorder Medication"
         android:textColor="@color/colorPrimaryDark" />
 
 </RelativeLayout>
