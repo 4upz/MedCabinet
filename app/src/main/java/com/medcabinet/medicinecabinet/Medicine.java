@@ -42,6 +42,6 @@ public class Medicine {
     }
 
     public String getUIText() {
-        return String.format("Name: %s \nDosage: %s\n Frequency: %s", medName, dosage, frequency);
+        return String.format("Name: %s \nDosage: %s\nFrequency: %s", medName, dosage, frequency);
     }
 }
