@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "646040940990",
+    "firebase_url": "https://medcabinet-d8ee3.firebaseio.com",
+    "project_id": "medcabinet-d8ee3",
+    "storage_bucket": "medcabinet-d8ee3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646040940990:android:db17281483a870f2",
+        "android_client_info": {
+          "package_name": "com.medcabinet.medicinecabinet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646040940990-td8avpfgku7kq74v13pul26t2b2rfo21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm1k6Z9p6rHNZ-fBYPixOhnPQrtOUy7ok"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
