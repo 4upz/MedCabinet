@@ -47,7 +47,7 @@ public class Home extends AppCompatActivity {
                 goToMain2Activity();
             }
         });
-<<<<<<< HEAD
+
 
         Button button5 = findViewById(R.id.button5);
         button5.setOnClickListener(new View.OnClickListener() {
@@ -57,8 +57,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-=======
->>>>>>> 0ac965cc27de28b989dfa402d8bba54296c9d37f
+
 // ...
 
 // Choose authentication providers
