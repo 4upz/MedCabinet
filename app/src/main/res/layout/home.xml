@@ -28,7 +28,7 @@
         android:textSize="30sp"
         android:layout_marginTop="50dp"
         android:textColor="#c69c6d"/>
-    
+
 
     <Button
         android:id="@+id/button4"
