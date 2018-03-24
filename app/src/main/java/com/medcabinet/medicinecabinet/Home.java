@@ -47,6 +47,18 @@ public class Home extends AppCompatActivity {
                 goToMain2Activity();
             }
         });
+<<<<<<< HEAD
+
+        Button button5 = findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToUsedMedicine();
+            }
+        });
+
+=======
+>>>>>>> 0ac965cc27de28b989dfa402d8bba54296c9d37f
 // ...
 
 // Choose authentication providers
@@ -77,7 +89,7 @@ public class Home extends AppCompatActivity {
                 //Task<Void> task = myRef.setValue(user.getEmail());
 
                 Log.d(TAG, "Yay, we got a user " + user);
-
+//                Log.d(TAG, "Display Name:  " + user.getDisplayName());
 
                 // ...
             } else {
@@ -92,5 +104,9 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void goToUsedMedicine() {
+        Intent intent = new Intent(this, medicine_used.class);
+        startActivity(intent);
+    }
 
 }
