@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medcabinet.medicinecabinet.MainActivity"
+    android:background="#603813">
+
+
+    <ImageView
+        android:id="@+id/medcab"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/medcabinet" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medcab"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10sp"
+        android:text="Welcome to MedCabinet!"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:textColor="#c69c6d"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:textSize="30dp"
+        android:background="#603813
+"       android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:backgroundTint="#603813"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textSize="30dp"
+        android:background="#c69c6d"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+
+    android:layout_centerHorizontal="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#603813"
+/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:textSize="24dp"
+        android:background="#c69c6d"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="40dp"
+        android:text="Login" />
+
+
+</RelativeLayout>

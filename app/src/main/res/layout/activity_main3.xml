@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medcabinet.medicinecabinet.Main3Activity"
+    android:background="#603813">
+
+
+
+<ImageView
+    android:id="@+id/medcabinet2"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_weight="1"
+    android:background="@color/colorPrimaryDark"
+    android:src="@drawable/medcabinet2"
+    android:paddingBottom="10sp"
+    />
+
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:paddingBottom="20sp"
+    android:paddingTop="80sp"
+    android:text="Medicine purchased today?"
+    android:textSize="30sp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="189dp"
+    android:background="#603813"
+    android:textColor="@color/colorPrimary"
+    android:layout_below="@id/medcabinet2"
+    />
+
+
+<EditText
+    android:id="@+id/editText2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:ems="10"
+    android:gravity="center_horizontal"
+    android:inputType="textPersonName"
+    android:paddingBottom="10sp"
+    android:hint="Enter Name of Medicine"
+    android:background="#603813"
+    android:textSize="22sp"
+    android:textColorHint="@color/colorPrimary"
+    android:textColor="@color/colorPrimary"
+    android:layout_below="@id/textView3"
+    android:backgroundTint="@color/colorPrimaryDark"
+    />
+
+<EditText
+    android:id="@+id/editText3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="1"
+    android:ems="10"
+    android:gravity="center_horizontal"
+    android:inputType="number"
+    android:paddingBottom="10sp"
+    android:hint="Quantity"
+    android:textSize="22sp"
+    android:background="#603813"
+    android:textColorHint="@color/colorPrimary"
+    android:textColor="@color/colorPrimary"
+    android:layout_below="@id/editText2"/>
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText3"
+        android:layout_weight="1"
+        android:background="#603813"
+        android:ems="10"
+        android:gravity="center_horizontal|center"
+        android:hint="Frequency of Use"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="22sp"
+        android:paddingBottom="50sp"/>
+
+    <LinearLayout
+        android:id="@+id/verti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:minWidth="180dp"
+            android:text="Submit"
+            android:textColor="@color/colorPrimaryDark"
+            android:onClick="submitOrder"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/verti"
+
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:minWidth="180dp"
+            android:onClick="goToMain4Activity"
+            android:text="Go to MyMedCabinet"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+
+</RelativeLayout>
